@@ -1,0 +1,407 @@
+/* Définition des polices personnalisées */
+
+@font-face {
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'), url('polices/ballpark.woff') format('woff'), url('polices/ballpark.ttf') format('truetype'), url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'), url('polices/dayrom.woff') format('woff'), url('polices/dayrom.ttf') format('truetype'), url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body {
+    background-color: #012e74;
+    font-family: tahoma;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+#presentation {
+    text-align: center;
+}
+
+#bloc_page {
+    width: 1200px;
+    margin: auto;
+    background-color: black;
+    display: inline-block;
+    z-index: -1;
+}
+
+section h1, footer h1, nav a {
+    font-family: tahoma;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* Header */
+
+header {
+    background: url('../images/separateur.png') repeat-x bottom;
+}
+
+    header h6 {
+        border: 3px #1F618D groove;
+        text-align: right;
+    }
+
+#titre_principal {
+    display: inline-block;
+}
+
+header h1 {
+    font-family: 'tahoma', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+}
+
+header h2 {
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Navigation */
+
+nav {
+    display: inline-block;
+    width: 740px;
+    text-align: right;
+    color: white;
+}
+
+    nav ul {
+        list-style-type: none;
+    }
+
+
+    nav li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    nav a {
+        font-size: 1.3em;
+        color: #181818;
+        padding-bottom: 3px;
+        text-decoration: none;
+        color: white;
+    }
+
+        nav a:hover {
+            color: #1F618D;
+            border-bottom: 3px solid #1F618D;
+        }
+
+
+/* Corps */
+
+article, aside {
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article {
+    width: 625px;
+    margin-right: 15px;
+    color: white
+}
+
+.ico_categorie {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p {
+    font-size: 0.8em;
+}
+
+aside {
+    position: relative;
+    width: 235px;
+    background-color: #404040;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+    aside img {
+        margin-right: 5px;
+    }
+
+/* Footer */
+
+footer {
+    background: url('../images/separateur.png') repeat-x top;
+    padding-top: 25px;
+    color: white;
+}
+
+    footer p, footer ul {
+        font-size: 0.8em;
+    }
+
+    footer h1 {
+        font-size: 1.1em;
+    }
+
+#liens {
+    background-color: #012e74;
+    position: fixed;
+    color: white;
+    text-align: center-left;
+    z-index:1;
+}
+
+
+
+
+/* Correctifs pour les vieilles versions d'Internet Explorer */
+
+/* Pour activer un positionnement type inline-block sur les vieilles versions d'IE */
+
+.old_ie #titre_principal, .old_ie #logo, .old_ie header h1, .old_ie nav, .old_ie nav li, .old_ie .bouton_rouge, .old_ie article, .old_ie aside, .old_ie #tweet, .old_ie #mes_photos, .old_ie #mes_amis, .old_ie #mes_amis ul {
+    display: inline;
+    zoom: 1;
+}
+
+/* Quelques ajustements pour les vieilles versions d'IE */
+
+.old_ie section h1, .ie8 section h1 {
+    font-size: 1.1em;
+}
+
+.old_ie footer div, .ie8 footer div {
+    margin-top: 30px;
+    background: url('../images/separateur.png') repeat-x top;
+}
+
+html {
+    text-align: center;
+}
+
+#titre_cv {
+    font-size: 25px;
+}
+
+#titre_cv1 {
+    font-size: 20px;
+    text-decoration: underline #1F618D;
+}
+
+h5 {
+    font-weight: normal;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+
+#Lettre {
+    font-size: 19px ;
+    text-align: center;
+}
+
+#LiensRapides {
+    color: white;
+    position: fixed;
+    right: 3%;
+    top: 50%;
+    width: 300px;
+    background-color: black;
+}
+
+#pdev {
+    font-size: 25px;
+}
+
+#picg {
+    float: left;
+    margin-left: 2%;
+}
+
+#picd {
+    float: right;
+    margin-right: 2%;
+}
+
+
+
+
+.wrapper {
+    height: 458px;
+    margin: 100px auto 0;
+    position: relative;
+    width: 600px;
+    z-index: 0;
+}
+
+.slider {
+    background-color: #ddd;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    z-index: 0;
+}
+
+.wrapper > input {
+    display: none;
+    z-index: 0;
+}
+
+
+.slides {
+    height: inherit;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+}
+
+.slide1 {
+    background-image: url(../images/captureziknco1.png);
+    z-index: 0;
+}
+
+.slide2 {
+    background-image: url(../images/captureziknco2.png);
+    z-index: 0;
+}
+
+.slide3 {
+    background-image: url(../images/captureziknco3.png);
+    z-index: 0;
+}
+.slide4 {
+    background-image: url(../images/captureziknco4.png);
+    z-index: 0;
+}
+.slide5 {
+    background-image: url(../images/captureziknco5.png);
+    z-index: 0;
+}
+
+
+
+.wrapper .controls {
+    left: 50%;
+    margin-left: -98px;
+    position: absolute;
+    z-index: 0;
+}
+
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    border-radius: 50%;
+    transition: background ease-in-out .5s;
+    z-index: 0;
+}
+
+    .wrapper label:after {
+        border: 2px solid #ddd;
+        content: " ";
+        display: block;
+        height: 12px;
+        left: -4px;
+        position: absolute;
+        top: -4px;
+        width: 12px;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+    background: #ddd;
+}
+
+
+.slides {
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    z-index: 0;
+}
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    z-index: 0;
+}
+a {
+    color: #ccc;
+    text-shadow: 0 -1px 0 black;
+}
+
+    a:hover, a:focus {
+        background: rgba(0,0,0,.4);
+        box-shadow: 0 1px 0 rgba(255,255,255,.4);
+    }
+    a span {
+        position: absolute;
+        margin-top: 23px;
+        margin-left: -35px;
+        color: white;
+        background: #012e74;
+        padding: 15px;
+        border-radius: 3px;
+        box-shadow: 0 0 2px rgba(0,0,0,.5);
+        transform: scale(0) rotate(-12deg);
+        transition: all .25s;
+        opacity: 0;
+        font-family: Tahoma;
+    }
+    a:hover span, a:focus span {
+        transform: scale(1) rotate(0);
+        opacity: 1;
+    }
+    
+    .imgBoutique{
+        width: 150px;
+	height: 150px;
+    }

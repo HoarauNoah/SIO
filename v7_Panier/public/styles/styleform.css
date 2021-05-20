@@ -1,0 +1,60 @@
+
+.titreCli {
+    font-weight:bold;
+    font-size:30px;
+    text-align:center;
+    margin-bottom:20px;
+    color:white;
+}
+fieldset {
+    padding:20px; 
+    margin-bottom:10px;
+    color : white;
+}
+fieldset.sansBordure {
+    padding:5px;
+    border-style:none;
+    color: white;
+}
+legend {
+    color:#a0522d;
+    font-weight:bold
+}
+label {
+    width:120px;
+    display:block;
+    float:left;
+}
+label.enligne {
+    display:inline;
+    float:none;
+}
+input {
+    border:1px solid black;
+    background-color:#A6BEDE;
+    margin-bottom:15px;
+        color:black;
+}
+input[type=text],input[type=password] {
+    width:200px;
+    color:black;
+}
+input[type=checkbox] {
+    margin-top:10px;
+        color:black;
+
+}
+input[type=submit] {
+    width:200px;
+    height : 30px;
+    font-size:13px;
+    font-weight:bold;
+    margin-top:20px;
+    color:black;
+} 
+.message-erreur{
+    background:url(public/images/pasOK.png) 10px center no-repeat;
+    padding: 0 0 0 30px;
+    display:inline;
+    color:#B30202;
+} 
